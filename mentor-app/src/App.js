@@ -2,6 +2,7 @@ import React from "react";
 import LoginForm from "./components/LoginForm";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import Body from "./components/Body";
+import MenuAppBar from '.components/MenuAppBar';
 
 
 
@@ -11,7 +12,7 @@ class App extends Component {
             <div className="App">
             <Router>
                 <div>
-                    <Route exact path="/" Component={LoginForm}/>
+                    <Route exact path="/" Component={{main:LoginForm, Topbar:MenuAppBar}}/>
                     <Route exact path="/Feed" Component={Body}/>
                 </div>
             </Router>

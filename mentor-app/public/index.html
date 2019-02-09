@@ -25,6 +25,25 @@
     <title>React App</title>
   </head>
   <body>
+    <!--Components Fonts-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+      <div id="root"></div> 
+
+      <!--Firebase Authentication-->
+     <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCzbjdeNomw0XPw7wwvHMvSaYLJOhvKGec",
+    authDomain: "mentor-bb2b7.firebaseapp.com",
+    databaseURL: "https://mentor-bb2b7.firebaseio.com",
+    projectId: "mentor-bb2b7",
+    storageBucket: "mentor-bb2b7.appspot.com",
+    messagingSenderId: "648242390281"
+  };
+  firebase.initializeApp(config);
+</script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
