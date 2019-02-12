@@ -1,8 +1,9 @@
-import React from "react";
+//import React from "react";
+import React, { Component } from "react";
 import LoginForm from "./components/LoginForm";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import Body from "./components/Body";
-import MenuAppBar from '.components/MenuAppBar';
+import NavBar from './components/NavBar';
 
 
 
@@ -12,8 +13,8 @@ class App extends Component {
             <div className="App">
             <Router>
                 <div>
-                    <Route exact path="/" Component={{main:LoginForm, Topbar:MenuAppBar}}/>
-                    <Route exact path="/Feed" Component={Body}/>
+                    <Route path="/" component={NavBar}/>
+                    <Route path="/Feed" component={Body}/>
                 </div>
             </Router>
             </div>
