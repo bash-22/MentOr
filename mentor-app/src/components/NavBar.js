@@ -23,6 +23,7 @@ const styles = {
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
+    color: "#AA744B"
   },
 };
 
@@ -52,12 +53,12 @@ class MenuAppBar extends React.Component {
     return (
       <div className={classes.root}>
       
-        <AppBar position="static">
+        <AppBar position="static" style={{ backgroundColor: "#010619" }}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
+            <Typography variant="h6" color="#BDBAB6" className={classes.grow} style={{ color: "#BDBAB6" }}>
               Feed
             </Typography>
             {auth && (
@@ -66,7 +67,8 @@ class MenuAppBar extends React.Component {
                   aria-owns={open ? 'menu-appbar' : undefined}
                   aria-haspopup="true"
                   onClick={this.handleMenu}
-                  color="inherit"
+                  color="#AA744B"
+                  style={{ color: "#AA744B" }}
                 >
                   <AccountCircle />
                 </IconButton>
