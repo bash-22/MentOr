@@ -12,10 +12,12 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import Logo from "./Logo";
 
 const styles = {
   root: {
     flexGrow: 1,
+    backgroundColor: "#010619"
   },
   grow: {
     flexGrow: 1,
@@ -23,7 +25,7 @@ const styles = {
   menuButton: {
     marginLeft: -12,
     marginRight: 20,
-    color: "#AA744B"
+    color: "#AA744B",
   },
 };
 
@@ -52,7 +54,8 @@ class MenuAppBar extends React.Component {
 
     return (
       <div className={classes.root}>
-      
+       <Logo position="static" style={{ backgroundColor: "#010619" }}>
+       </Logo>
         <AppBar position="static" style={{ backgroundColor: "#010619" }}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">

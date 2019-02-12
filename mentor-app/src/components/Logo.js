@@ -5,7 +5,7 @@ console.log(logo); // /logo.png
 
 function Header() {
   // Import result is the URL of your image
-  return <img src={logo} alt="Logo" />;
+  return <img src={logo} style= {{ width:"25%" }} alt="Logo" />;
 }
 
 export default Header;
